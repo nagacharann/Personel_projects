@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@0,100;0,400;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainheading {
+  font-size: 2em;
+  margin: 10px;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60rem;
+  margin: 15px;
+  position: relative;
+
+}
+.current,
+.destination p {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.destination input {
+    border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  padding-right: 60px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+
+.destination input::placeholder{
+    color: black;
+    font-weight: 300;
+}
+
+.current input::placeholder{
+    color: black;
+    font-weight: 300;
+}
+
+.destination input:focus{
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+}
+.current input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    padding-right: 60px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+
+.current input:focus{
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+}
+
+.modes{
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10px;
+    width: 55rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.walk{
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 50px;
+}
+.walk i{
+    position: relative;
+    top: 15%;
+    left:35%;
+    font-size: 40px;
+    color: black;
+}
+i.fa-person-walking{
+    position: relative;
+    top: 15%;
+    left:40%;
+    font-size: 40px;
+    color: black;
+}
+
+.walk p{
+    position: relative;
+    top: 30%;
+    left: 35%;
+    font-size: 20px;
+    color: black;
+}
+
+.calculate button{
+    padding:  10px 40px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(-10deg,#008fcd ,#50037c );
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 800;
+    border-radius: 50px;
+
+}
